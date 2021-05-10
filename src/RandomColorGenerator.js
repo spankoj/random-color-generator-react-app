@@ -1,15 +1,12 @@
 import randomColor from 'randomcolor';
-import { useState } from 'react';
-
-export default function RandomColorGenerator() {
+export default function RandomColorGenerator(props) {
   const randomColorHEX = randomColor();
-  const [hexcolor, setHexcolor] = useState(randomColorHEX);
   return (
     <div>
-      <button className="btn" onClick={() => setHexcolor(randomColorHEX)}>
+      <button className="btn" onClick={() => props.setHexcolor(randomColorHEX)}>
         Push me to generate HEX color code
       </button>
-      <div>{`##########  ${hexcolor}  ##########
+      <div>{`##########  ${props.hexcolor}  ##########
       `}</div>
     </div>
   );
