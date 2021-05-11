@@ -6,8 +6,21 @@ export default function RandomColorGenerator(props) {
       <button className="btn" onClick={() => props.setHexcolor(randomColorHEX)}>
         Push me to generate HEX color code
       </button>
-      <div>{`##########  ${props.hexcolor}  ##########
-      `}</div>
+
+      <div
+        className="box"
+        style={{
+          backgroundColor: props.color,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <div>
+          {`#######     ${props.hexcolor}     ########
+      `}
+        </div>
+      </div>
     </div>
   );
 }
