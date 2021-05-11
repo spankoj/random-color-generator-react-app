@@ -5,8 +5,11 @@ import ColorDiv from './ColorDiv';
 import RandomColorGenerator from './RandomColorGenerator';
 
 function App() {
+  //Random color package
   const randomColorHEX = randomColor();
+  // useState hook for changing hex color states
   const [hexcolor, setHexcolor] = useState(randomColorHEX);
+
   return (
     <div className="container">
       <header className="header">
