@@ -27,6 +27,13 @@ body {
   margin-bottom: 20px;
 }
 
+.img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  border-radius: 50%;
+  padding: 10px;
+}
 .btn {
   color: #fff;
   background: steelblue;
@@ -47,13 +54,35 @@ body {
 .box {
   margin: 0 auto;
   width: 100%;
-  height: 250px;
+  height: 200px;
 }
 
-.img {
-  display: block;
-  margin: auto;
-  width: 80%;
-  border-radius: 40%;
-  padding: 10px;
+.input {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 20px auto;
+  color: #fff;
+  background: steelblue;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  width: auto;
+}
+
+.a {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.b {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+.c {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.d {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }

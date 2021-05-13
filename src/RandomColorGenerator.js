@@ -1,11 +1,15 @@
 import randomColor from 'randomcolor';
 
 export default function RandomColorGenerator(props) {
+  //Random color package
   const randomColorHEX = randomColor();
+  // Function handler for useState hook
+  const handleSetHex = () => props.setHexcolor(randomColorHEX);
+
   return (
     <div className="interface">
-      <button className="btn" onClick={() => props.setHexcolor(randomColorHEX)}>
-        Push me to generate HEX color code
+      <button className="btn" onClick={handleSetHex}>
+        Generate color code!
       </button>
 
       <div
@@ -19,7 +23,7 @@ export default function RandomColorGenerator(props) {
           fontSize: '3rem',
         }}
       >
-        {`code: ${props.hexcolor}`}
+        {`${props.color}`}
       </div>
     </div>
   );
