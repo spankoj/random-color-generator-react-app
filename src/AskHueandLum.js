@@ -1,7 +1,7 @@
 import randomColor from 'randomcolor';
 
 const AskHueandLum = (props) => {
-  //Random color package hue & luminosity
+  // Random color package hue & luminosity
   const randomHue = randomColor({
     hue: `${props.hueInput}`,
     luminosity: `${props.lumInput}`,
@@ -22,7 +22,7 @@ const AskHueandLum = (props) => {
         <h3>Hue</h3>
         <input
           onChange={handleChange}
-          placeholder={'Hue'}
+          placeholder="Hue"
           value={props.hueInput}
         />
       </div>

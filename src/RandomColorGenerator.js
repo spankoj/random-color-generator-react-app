@@ -1,7 +1,7 @@
 import randomColor from 'randomcolor';
 
 export default function RandomColorGenerator(props) {
-  //Random color package
+  // Random color package
   const randomColorHEX = randomColor();
   // Function handler for useState hook
   const handleSetHex = () => props.setHexcolor(randomColorHEX);
