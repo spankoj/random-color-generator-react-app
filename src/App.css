@@ -86,3 +86,14 @@ body {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
+
+.btn-input {
+  color: #000;
+  background: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin: 10px;
+  width: auto;
+}

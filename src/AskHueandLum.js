@@ -35,10 +35,10 @@ const AskHueandLum = (props) => {
           <option value="dark">Dark</option>
         </select>
       </div>
-      <button className="c" onClick={handleInput}>
+      <button className="c btn-input" onClick={handleInput}>
         Enter
       </button>
-      <button className="d" onClick={handleDel}>
+      <button className="d btn-input" onClick={handleDel}>
         Delete
       </button>
     </div>
